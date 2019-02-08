@@ -18,6 +18,7 @@
 		C010D813220DD3A800927564 /* twillio_video_callingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C010D812220DD3A800927564 /* twillio_video_callingTests.swift */; };
 		C010D81E220DD3A800927564 /* twillio_video_callingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C010D81D220DD3A800927564 /* twillio_video_callingUITests.swift */; };
 		C010D82C220DD4E300927564 /* TwilioVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C010D82B220DD4E300927564 /* TwilioVideo.framework */; };
+		C010D82E220DD97600927564 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C010D82D220DD97600927564 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		C010D81D220DD3A800927564 /* twillio_video_callingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twillio_video_callingUITests.swift; sourceTree = "<group>"; };
 		C010D81F220DD3A800927564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C010D82B220DD4E300927564 /* TwilioVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwilioVideo.framework; path = Pods/TwilioVideo/Build/iOS/TwilioVideo.framework; sourceTree = "<group>"; };
+		C010D82D220DD97600927564 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F3BF152526F8877F45497C36 /* Pods-twillio video calling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twillio video calling.release.xcconfig"; path = "Target Support Files/Pods-twillio video calling/Pods-twillio video calling.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 				C010D804220DD3A800927564 /* Assets.xcassets */,
 				C010D806220DD3A800927564 /* LaunchScreen.storyboard */,
 				C010D809220DD3A800927564 /* Info.plist */,
+				C010D82D220DD97600927564 /* Utils.swift */,
 			);
 			path = "twillio video calling";
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			files = (
 				C010D800220DD3A600927564 /* ViewController.swift in Sources */,
 				C010D7FE220DD3A600927564 /* AppDelegate.swift in Sources */,
+				C010D82E220DD97600927564 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
