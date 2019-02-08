@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		171DD824712C9311C7A5A92C /* Pods_twillio_video_calling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5B529F5F12947A402FECF3 /* Pods_twillio_video_calling.framework */; };
+		4A3AF352D3348F447E4FF0B9 /* Pods_twillio_video_callingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D60902E3F1CA2619201BFB5 /* Pods_twillio_video_callingTests.framework */; };
+		659F19FCC4D091568D6D9531 /* Pods_twillio_video_callingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE81F8C8F9CBC7DE5C1827A /* Pods_twillio_video_callingUITests.framework */; };
+		C010D7FE220DD3A600927564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C010D7FD220DD3A600927564 /* AppDelegate.swift */; };
+		C010D800220DD3A600927564 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C010D7FF220DD3A600927564 /* ViewController.swift */; };
+		C010D803220DD3A600927564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C010D801220DD3A600927564 /* Main.storyboard */; };
+		C010D805220DD3A800927564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C010D804220DD3A800927564 /* Assets.xcassets */; };
+		C010D808220DD3A800927564 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C010D806220DD3A800927564 /* LaunchScreen.storyboard */; };
+		C010D813220DD3A800927564 /* twillio_video_callingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C010D812220DD3A800927564 /* twillio_video_callingTests.swift */; };
+		C010D81E220DD3A800927564 /* twillio_video_callingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C010D81D220DD3A800927564 /* twillio_video_callingUITests.swift */; };
+		C010D82C220DD4E300927564 /* TwilioVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C010D82B220DD4E300927564 /* TwilioVideo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C010D80F220DD3A800927564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C010D7F2220DD3A600927564 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C010D7F9220DD3A600927564;
+			remoteInfo = "twillio video calling";
+		};
+		C010D81A220DD3A800927564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C010D7F2220DD3A600927564 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C010D7F9220DD3A600927564;
+			remoteInfo = "twillio video calling";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16D2C0D180B30C7A0CA08B03 /* Pods-twillio video callingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twillio video callingTests.debug.xcconfig"; path = "Target Support Files/Pods-twillio video callingTests/Pods-twillio video callingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E5B529F5F12947A402FECF3 /* Pods_twillio_video_calling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_twillio_video_calling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		450CFB45C5A4F25033197B26 /* Pods-twillio video calling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twillio video calling.debug.xcconfig"; path = "Target Support Files/Pods-twillio video calling/Pods-twillio video calling.debug.xcconfig"; sourceTree = "<group>"; };
+		6BE81F8C8F9CBC7DE5C1827A /* Pods_twillio_video_callingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_twillio_video_callingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F2519F1E56772757C532061 /* Pods-twillio video callingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twillio video callingUITests.debug.xcconfig"; path = "Target Support Files/Pods-twillio video callingUITests/Pods-twillio video callingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D60902E3F1CA2619201BFB5 /* Pods_twillio_video_callingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_twillio_video_callingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94B77982E74EB1DF31659315 /* Pods-twillio video callingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twillio video callingUITests.release.xcconfig"; path = "Target Support Files/Pods-twillio video callingUITests/Pods-twillio video callingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AF6E5E5272810813E52286BF /* Pods-twillio video callingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twillio video callingTests.release.xcconfig"; path = "Target Support Files/Pods-twillio video callingTests/Pods-twillio video callingTests.release.xcconfig"; sourceTree = "<group>"; };
+		C010D7FA220DD3A600927564 /* twillio video calling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "twillio video calling.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C010D7FD220DD3A600927564 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C010D7FF220DD3A600927564 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C010D802220DD3A600927564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C010D804220DD3A800927564 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C010D807220DD3A800927564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C010D809220DD3A800927564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C010D80E220DD3A800927564 /* twillio video callingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "twillio video callingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C010D812220DD3A800927564 /* twillio_video_callingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twillio_video_callingTests.swift; sourceTree = "<group>"; };
+		C010D814220DD3A800927564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C010D819220DD3A800927564 /* twillio video callingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "twillio video callingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C010D81D220DD3A800927564 /* twillio_video_callingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twillio_video_callingUITests.swift; sourceTree = "<group>"; };
+		C010D81F220DD3A800927564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C010D82B220DD4E300927564 /* TwilioVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwilioVideo.framework; path = Pods/TwilioVideo/Build/iOS/TwilioVideo.framework; sourceTree = "<group>"; };
+		F3BF152526F8877F45497C36 /* Pods-twillio video calling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twillio video calling.release.xcconfig"; path = "Target Support Files/Pods-twillio video calling/Pods-twillio video calling.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C010D7F7220DD3A600927564 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C010D82C220DD4E300927564 /* TwilioVideo.framework in Frameworks */,
+				171DD824712C9311C7A5A92C /* Pods_twillio_video_calling.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C010D80B220DD3A800927564 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A3AF352D3348F447E4FF0B9 /* Pods_twillio_video_callingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C010D816220DD3A800927564 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659F19FCC4D091568D6D9531 /* Pods_twillio_video_callingUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EFB18E22AEB39FBA7F51430 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				450CFB45C5A4F25033197B26 /* Pods-twillio video calling.debug.xcconfig */,
+				F3BF152526F8877F45497C36 /* Pods-twillio video calling.release.xcconfig */,
+				16D2C0D180B30C7A0CA08B03 /* Pods-twillio video callingTests.debug.xcconfig */,
+				AF6E5E5272810813E52286BF /* Pods-twillio video callingTests.release.xcconfig */,
+				6F2519F1E56772757C532061 /* Pods-twillio video callingUITests.debug.xcconfig */,
+				94B77982E74EB1DF31659315 /* Pods-twillio video callingUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C010D7F1220DD3A600927564 = {
+			isa = PBXGroup;
+			children = (
+				C010D7FC220DD3A600927564 /* twillio video calling */,
+				C010D811220DD3A800927564 /* twillio video callingTests */,
+				C010D81C220DD3A800927564 /* twillio video callingUITests */,
+				C010D7FB220DD3A600927564 /* Products */,
+				4EFB18E22AEB39FBA7F51430 /* Pods */,
+				C10C283C02E5440C2539D795 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C010D7FB220DD3A600927564 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C010D7FA220DD3A600927564 /* twillio video calling.app */,
+				C010D80E220DD3A800927564 /* twillio video callingTests.xctest */,
+				C010D819220DD3A800927564 /* twillio video callingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C010D7FC220DD3A600927564 /* twillio video calling */ = {
+			isa = PBXGroup;
+			children = (
+				C010D7FD220DD3A600927564 /* AppDelegate.swift */,
+				C010D7FF220DD3A600927564 /* ViewController.swift */,
+				C010D801220DD3A600927564 /* Main.storyboard */,
+				C010D804220DD3A800927564 /* Assets.xcassets */,
+				C010D806220DD3A800927564 /* LaunchScreen.storyboard */,
+				C010D809220DD3A800927564 /* Info.plist */,
+			);
+			path = "twillio video calling";
+			sourceTree = "<group>";
+		};
+		C010D811220DD3A800927564 /* twillio video callingTests */ = {
+			isa = PBXGroup;
+			children = (
+				C010D812220DD3A800927564 /* twillio_video_callingTests.swift */,
+				C010D814220DD3A800927564 /* Info.plist */,
+			);
+			path = "twillio video callingTests";
+			sourceTree = "<group>";
+		};
+		C010D81C220DD3A800927564 /* twillio video callingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C010D81D220DD3A800927564 /* twillio_video_callingUITests.swift */,
+				C010D81F220DD3A800927564 /* Info.plist */,
+			);
+			path = "twillio video callingUITests";
+			sourceTree = "<group>";
+		};
+		C10C283C02E5440C2539D795 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E5B529F5F12947A402FECF3 /* Pods_twillio_video_calling.framework */,
+				C010D82B220DD4E300927564 /* TwilioVideo.framework */,
+				8D60902E3F1CA2619201BFB5 /* Pods_twillio_video_callingTests.framework */,
+				6BE81F8C8F9CBC7DE5C1827A /* Pods_twillio_video_callingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C010D7F9220DD3A600927564 /* twillio video calling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C010D822220DD3A800927564 /* Build configuration list for PBXNativeTarget "twillio video calling" */;
+			buildPhases = (
+				DA06B6FFF0E7D3E0A3D93A9B /* [CP] Check Pods Manifest.lock */,
+				C010D7F6220DD3A600927564 /* Sources */,
+				C010D7F7220DD3A600927564 /* Frameworks */,
+				C010D7F8220DD3A600927564 /* Resources */,
+				E037545C6BFC33D4D88F28D2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "twillio video calling";
+			productName = "twillio video calling";
+			productReference = C010D7FA220DD3A600927564 /* twillio video calling.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C010D80D220DD3A800927564 /* twillio video callingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C010D825220DD3A800927564 /* Build configuration list for PBXNativeTarget "twillio video callingTests" */;
+			buildPhases = (
+				843B554B98D6ABC962419D5B /* [CP] Check Pods Manifest.lock */,
+				C010D80A220DD3A800927564 /* Sources */,
+				C010D80B220DD3A800927564 /* Frameworks */,
+				C010D80C220DD3A800927564 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C010D810220DD3A800927564 /* PBXTargetDependency */,
+			);
+			name = "twillio video callingTests";
+			productName = "twillio video callingTests";
+			productReference = C010D80E220DD3A800927564 /* twillio video callingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C010D818220DD3A800927564 /* twillio video callingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C010D828220DD3A800927564 /* Build configuration list for PBXNativeTarget "twillio video callingUITests" */;
+			buildPhases = (
+				A0414426CC86425D9FF8DB60 /* [CP] Check Pods Manifest.lock */,
+				C010D815220DD3A800927564 /* Sources */,
+				C010D816220DD3A800927564 /* Frameworks */,
+				C010D817220DD3A800927564 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C010D81B220DD3A800927564 /* PBXTargetDependency */,
+			);
+			name = "twillio video callingUITests";
+			productName = "twillio video callingUITests";
+			productReference = C010D819220DD3A800927564 /* twillio video callingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C010D7F2220DD3A600927564 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = elgartoinf;
+				TargetAttributes = {
+					C010D7F9220DD3A600927564 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					C010D80D220DD3A800927564 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C010D7F9220DD3A600927564;
+					};
+					C010D818220DD3A800927564 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C010D7F9220DD3A600927564;
+					};
+				};
+			};
+			buildConfigurationList = C010D7F5220DD3A600927564 /* Build configuration list for PBXProject "twillio video calling" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C010D7F1220DD3A600927564;
+			productRefGroup = C010D7FB220DD3A600927564 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C010D7F9220DD3A600927564 /* twillio video calling */,
+				C010D80D220DD3A800927564 /* twillio video callingTests */,
+				C010D818220DD3A800927564 /* twillio video callingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C010D7F8220DD3A600927564 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C010D808220DD3A800927564 /* LaunchScreen.storyboard in Resources */,
+				C010D805220DD3A800927564 /* Assets.xcassets in Resources */,
+				C010D803220DD3A600927564 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C010D80C220DD3A800927564 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C010D817220DD3A800927564 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		843B554B98D6ABC962419D5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-twillio video callingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0414426CC86425D9FF8DB60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-twillio video callingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA06B6FFF0E7D3E0A3D93A9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-twillio video calling-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E037545C6BFC33D4D88F28D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-twillio video calling/Pods-twillio video calling-frameworks.sh",
+				"${PODS_ROOT}/TwilioVideo/Build/iOS/TwilioVideo.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioVideo.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-twillio video calling/Pods-twillio video calling-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C010D7F6220DD3A600927564 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C010D800220DD3A600927564 /* ViewController.swift in Sources */,
+				C010D7FE220DD3A600927564 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C010D80A220DD3A800927564 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C010D813220DD3A800927564 /* twillio_video_callingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C010D815220DD3A800927564 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C010D81E220DD3A800927564 /* twillio_video_callingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C010D810220DD3A800927564 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C010D7F9220DD3A600927564 /* twillio video calling */;
+			targetProxy = C010D80F220DD3A800927564 /* PBXContainerItemProxy */;
+		};
+		C010D81B220DD3A800927564 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C010D7F9220DD3A600927564 /* twillio video calling */;
+			targetProxy = C010D81A220DD3A800927564 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C010D801220DD3A600927564 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C010D802220DD3A600927564 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C010D806220DD3A800927564 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C010D807220DD3A800927564 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C010D820220DD3A800927564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C010D821220DD3A800927564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C010D823220DD3A800927564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 450CFB45C5A4F25033197B26 /* Pods-twillio video calling.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D7CCKSVBC5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/TwilioVideo/Build/iOS",
+				);
+				INFOPLIST_FILE = "twillio video calling/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.garto.twillio-video-calling";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C010D824220DD3A800927564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3BF152526F8877F45497C36 /* Pods-twillio video calling.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D7CCKSVBC5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/TwilioVideo/Build/iOS",
+				);
+				INFOPLIST_FILE = "twillio video calling/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.garto.twillio-video-calling";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C010D826220DD3A800927564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16D2C0D180B30C7A0CA08B03 /* Pods-twillio video callingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D7CCKSVBC5;
+				INFOPLIST_FILE = "twillio video callingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.garto.twillio-video-callingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/twillio video calling.app/twillio video calling";
+			};
+			name = Debug;
+		};
+		C010D827220DD3A800927564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF6E5E5272810813E52286BF /* Pods-twillio video callingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D7CCKSVBC5;
+				INFOPLIST_FILE = "twillio video callingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.garto.twillio-video-callingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/twillio video calling.app/twillio video calling";
+			};
+			name = Release;
+		};
+		C010D829220DD3A800927564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F2519F1E56772757C532061 /* Pods-twillio video callingUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D7CCKSVBC5;
+				INFOPLIST_FILE = "twillio video callingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.garto.twillio-video-callingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "twillio video calling";
+			};
+			name = Debug;
+		};
+		C010D82A220DD3A800927564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94B77982E74EB1DF31659315 /* Pods-twillio video callingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D7CCKSVBC5;
+				INFOPLIST_FILE = "twillio video callingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.garto.twillio-video-callingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "twillio video calling";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C010D7F5220DD3A600927564 /* Build configuration list for PBXProject "twillio video calling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C010D820220DD3A800927564 /* Debug */,
+				C010D821220DD3A800927564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C010D822220DD3A800927564 /* Build configuration list for PBXNativeTarget "twillio video calling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C010D823220DD3A800927564 /* Debug */,
+				C010D824220DD3A800927564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C010D825220DD3A800927564 /* Build configuration list for PBXNativeTarget "twillio video callingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C010D826220DD3A800927564 /* Debug */,
+				C010D827220DD3A800927564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C010D828220DD3A800927564 /* Build configuration list for PBXNativeTarget "twillio video callingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C010D829220DD3A800927564 /* Debug */,
+				C010D82A220DD3A800927564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C010D7F2220DD3A600927564 /* Project object */;
+}
