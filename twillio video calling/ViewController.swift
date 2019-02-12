@@ -208,7 +208,6 @@ extension ViewController : TVIRemoteParticipantDelegate {
         
         if (self.remoteParticipant == participant) {
             //MARK:  remover
-            //setupRemoteVideoView()
             videoTrack.addRenderer(self.remoteView!)
         }
     }
@@ -224,8 +223,6 @@ extension ViewController : TVIRemoteParticipantDelegate {
         
         if (self.remoteParticipant == participant) {
             videoTrack.removeRenderer(self.remoteView!)
-            self.remoteView?.removeFromSuperview()
-            self.remoteView = nil
         }
     }
     
@@ -584,21 +581,16 @@ extension ViewController : TVIRoomDelegate {
         
         self.callKitCompletionHandler!(false)
         self.room = nil
-        //self.showRoomUI(inRoom: false)
     }
     
     func room(_ room: TVIRoom, participantDidConnect participant: TVIRemoteParticipant) {
-        if (self.remoteParticipant == nil) {
-            self.remoteParticipant = participant
-            self.remoteParticipant?.delegate = self
-        }
+        self.remoteParticipant = participant
+        self.remoteParticipant?.delegate = self
         print("Participant \(participant.identity) connected with \(participant.remoteAudioTracks.count) audio and \(participant.remoteVideoTracks.count) video tracks")
     }
     
     func room(_ room: TVIRoom, participantDidDisconnect participant: TVIRemoteParticipant) {
         if (self.remoteParticipant == participant) {
-            //cleanupRemoteParticipant()
-            print("se deslogeo el participante")
         }
         print("Room \(room.name), Participant \(participant.identity) disconnected")
     }
