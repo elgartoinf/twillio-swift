@@ -11,8 +11,8 @@ import TwilioVideo
 import CallKit
 import AVFoundation
 
-class ViewController: UIViewController, TVIRoomDelegate {
-    var accessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTSzJjYTMyNTUzOGRhMGQ3ZjdlZjUzNTMxNDFlMWRkNzQzLTE1NDk2Mzc4NDkiLCJpc3MiOiJTSzJjYTMyNTUzOGRhMGQ3ZjdlZjUzNTMxNDFlMWRkNzQzIiwic3ViIjoiQUMwOTIzMGQ1MWM4NjBjZjdlOTYyYzFjM2M0MTFhZjIwNyIsImV4cCI6MTU0OTY0MTQ0OSwiZ3JhbnRzIjp7ImlkZW50aXR5IjoicyIsInZpZGVvIjp7InJvb20iOiJzZCJ9fX0.Q_5gvvvcq5SUpGXXH0Q3KM_hGEcgE5zZ8OyO32fmLZg"
+class ViewController: UIViewController {
+    var accessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTSzJjYTMyNTUzOGRhMGQ3ZjdlZjUzNTMxNDFlMWRkNzQzLTE1NDk5ODU5NTkiLCJpc3MiOiJTSzJjYTMyNTUzOGRhMGQ3ZjdlZjUzNTMxNDFlMWRkNzQzIiwic3ViIjoiQUMwOTIzMGQ1MWM4NjBjZjdlOTYyYzFjM2M0MTFhZjIwNyIsImV4cCI6MTU0OTk4OTU1OSwiZ3JhbnRzIjp7ImlkZW50aXR5IjoiMjMxMjMxMjMiLCJ2aWRlbyI6e319fQ.MscDCLo_87xYyb5h6GN8XPdE0RT5WE4NO_VLjED-sNc"
     
     // CallKit components
     let callKitProvider: CXProvider
@@ -78,13 +78,8 @@ class ViewController: UIViewController, TVIRoomDelegate {
             self.startPreview()
         }
         
-        //gesture to hide keyboard
-        let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
-        self.view.addGestureRecognizer(tap)
-    }
-    
-    @objc func dismissKeyboard() {
-        print("dismiss keyboard")
+        //MARK: setup conection and channel
+        performStartCallAction(uuid: UUID.init(), roomName: "channel")
     }
     
     // MARK: Private camera
@@ -536,3 +531,75 @@ extension ViewController {
     }
 }
 
+
+
+// MARK: TVIRoomDelegate
+extension ViewController : TVIRoomDelegate {
+    func didConnect(to room: TVIRoom) {
+        
+        // At the moment, this example only supports rendering one Participant at a time.
+        
+        print("Connected to room \(room.name) as \(String(describing: room.localParticipant?.identity))")
+        
+        if (room.remoteParticipants.count > 0) {
+            self.remoteParticipant = room.remoteParticipants[0]
+            self.remoteParticipant?.delegate = self
+        }
+        
+        let cxObserver = callKitCallController.callObserver
+        let calls = cxObserver.calls
+        
+        // Let the call provider know that the outgoing call has connected
+        if let uuid = room.uuid, let call = calls.first(where:{$0.uuid == uuid}) {
+            if call.isOutgoing {
+                callKitProvider.reportOutgoingCall(with: uuid, connectedAt: nil)
+            }
+        }
+        
+        self.callKitCompletionHandler!(true)
+    }
+    
+    func room(_ room: TVIRoom, didDisconnectWithError error: Error?) {
+        print("Disconncted from room \(room.name), error = \(String(describing: error))")
+        
+        if !self.userInitiatedDisconnect, let uuid = room.uuid, let error = error {
+            var reason = CXCallEndedReason.remoteEnded
+            
+            if (error as NSError).code != TVIError.roomRoomCompletedError.rawValue {
+                reason = .failed
+            }
+            
+            self.callKitProvider.reportCall(with: uuid, endedAt: nil, reason: reason)
+        }
+        
+        //self.cleanupRemoteParticipant()
+        self.room = nil
+        //self.showRoomUI(inRoom: false)
+        self.callKitCompletionHandler = nil
+        self.userInitiatedDisconnect = false
+    }
+    
+    func room(_ room: TVIRoom, didFailToConnectWithError error: Error) {
+        print("Failed to connect to room with error: \(error.localizedDescription)")
+        
+        self.callKitCompletionHandler!(false)
+        self.room = nil
+        //self.showRoomUI(inRoom: false)
+    }
+    
+    func room(_ room: TVIRoom, participantDidConnect participant: TVIRemoteParticipant) {
+        if (self.remoteParticipant == nil) {
+            self.remoteParticipant = participant
+            self.remoteParticipant?.delegate = self
+        }
+        print("Participant \(participant.identity) connected with \(participant.remoteAudioTracks.count) audio and \(participant.remoteVideoTracks.count) video tracks")
+    }
+    
+    func room(_ room: TVIRoom, participantDidDisconnect participant: TVIRemoteParticipant) {
+        if (self.remoteParticipant == participant) {
+            //cleanupRemoteParticipant()
+            print("se deslogeo el participante")
+        }
+        print("Room \(room.name), Participant \(participant.identity) disconnected")
+    }
+}
